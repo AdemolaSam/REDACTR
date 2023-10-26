@@ -47,9 +47,6 @@ function replaceWord(text, word, char){
    
 }
 
-
-
-
 function copyText(textStr, btn){
     btn.addEventListener("click", () => {
         if (navigator.clipboard){
