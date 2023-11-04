@@ -6,32 +6,46 @@
     <title>REDACTR</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <!-- <script src="app.js" defer></script> -->
+    <script src="app.js" defer></script>
 </head>
 <body>
-    <h1>ADEX REDACTR <sup>&reg</sup></h1>
+    <nav>
+        <span class="logo"><b>RedactR</b><sup>&reg</sup></span>
+        <span class="reset"><b>RESET</b></span>
+    </nav>
+    
     <div class="container">
-        <h2>Do you want to type some sh!!ty words but don't want your account flagged?
-            Enter text in the space provided below and see result here
-        </h2>
+        <p class="guide">
+            Scramble sensitive words from Text(s) before uploading on socials
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-twitch"></i>
+            <i class="fab fa-tiktok"></i>
+        </p>
     </div>    
     <form>
-        <textarea name="str" id="str" cols="80" rows="10"></textarea><br>
+        <div class="paste">Paste Text 📋</div>
+        <textarea name="str" id="str" cols="60" rows="7"></textarea><br>
+        
         <div class="opt-and-btn">
-            <select name="character" id="char">
-                <option value="*">Select Character to replace word with</option>
-                <option value="*">***</option>
-                <option value="#">###</option>
-                <option value="@">@@@</option>
-                <option value="!">!!!</option>
-                <option value="-">---</option>
-                <option value="%">%%%</option>
-            </select>
-            <input type="text" id="word" placeholder="Enter word to replace here">
+            <div>
+                <input type="text" id="char" value="*"><br>
+                <label for="char">Enter text/character to replace with</label>
+            </div>
+            <div>
+                <input type="text" id="word" placeholder="Enter word to replace here"><br>
+                <label for="word">Enter word(s) to replace. Words should be separated by spaces</label>
+            </div>
         </div>
-        <input class="btn" type="button" value="Go!">
+        <input class="btn" type="button" value="Redact Now!">
     </form>
 
-    <script src="app.js"></script>
+    <footer>
+        <div>
+            <p><i>Be Social Media Correct</i>👍</p>
+            <p>&copy ADEMOLA ODUNTAN</p>
+        </div>
+    </footer>
 </body>
 </html>
