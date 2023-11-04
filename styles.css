@@ -157,6 +157,7 @@ form .paste {
 }
 
 form textarea {
+    width: 60vw;
     font-size: 20px;
     margin-left: 20vw;
     border-radius: 10px;
