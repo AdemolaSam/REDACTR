@@ -141,6 +141,7 @@ nav .reset {
 /* FORM SECTION  */
 form {
     width: 100vw;
+    height: auto;
 }
 
 form .paste {
@@ -229,25 +230,36 @@ footer p {
         width: 100vw;
     }
 
+    nav {
+        font-size: 1.5em;
+    }
+
+    nav span {
+        padding: .5em;
+    }
+
     form {
         width: 100vw;
+        margin: 0;
     }
 
     form .paste {
         margin-left: 10vw;
+        margin-top: 1em;
     }
 
     form textarea {
         width: 90vw;
-        height: 40vh;
+        height: 30vh;
         margin-left: 5%;
         margin-right: 5%;
     }
 
     form .opt-and-btn {
-        width: 100%;
+        width: 94%;
         height: auto;
-        margin-left: 0;
+        margin-left: 3%;
+        margin-right: 3%;
         display: block;
     }
 
@@ -257,11 +269,11 @@ footer p {
     }
 
     form .btn {
-        width: 96%;
-        height: 2.5em;
+        width: 90%;
+        height: 2em;
         margin-top: 0;
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     /* RESULT */
@@ -281,8 +293,12 @@ footer p {
     }
 
     .result-container .stats {
-        height: 20vh;
+        height: auto;
         margin-top: 5vh;
+    }
+    
+    .result-container .stats p {
+        padding: .2em;
     }
 
 
