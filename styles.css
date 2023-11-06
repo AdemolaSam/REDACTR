@@ -221,14 +221,12 @@ footer p {
 
 @media all and (max-width: 600px){
     * {
-        /* background-color: rgb(216, 211, 203); */
         margin: 0;
         padding: 0;
     }
 
     body {
         width: 100vw;
-        height: 100vh;
     }
 
     form {
@@ -240,7 +238,7 @@ footer p {
     }
 
     form textarea {
-        width: 90%;
+        width: 90vw;
         height: 40vh;
         margin-left: 5%;
         margin-right: 5%;
@@ -248,20 +246,20 @@ footer p {
 
     form .opt-and-btn {
         width: 100%;
+        height: auto;
         margin-left: 0;
         display: block;
-
     }
 
     form .opt-and-btn input {
         width: 100%;
-        padding: .5em;
+        height: 100%;
     }
 
     form .btn {
         width: 96%;
         height: 2.5em;
-        margin-top: 10vh;
+        margin-top: 0;
         margin-left: 2%;
         margin-right: 2%;
     }
@@ -291,6 +289,6 @@ footer p {
     footer {
         width: 100vw;
         margin: 0;
-        height: 15vh;
+        height: 10vh;
     }
 }

@@ -21,7 +21,7 @@ let res = `<div class="result-container">
                 <div class="stats">
                     <p class="first">STATS:</p>
                     <p class="scan">Total Words scanned: <b class="words"></b></p>
-                    <p class="scan">Total characters: <b class="char"></b></p>
+                    <p class="scan">Characters replaced: <b class="char"></b></p>
                     <p class="scan">Time taken: <b class="time"></b></p>
                     <p class="scan">Replaced: <b class="replaced"></b> word(s)</p>    
                 </div>
@@ -88,18 +88,20 @@ If word passed is more then one
 
 function displayTimeAndCount(text, reg, startTime) {
     let count = 0
+    charCount = 0
     let wordsInText = text.split(" ")
     for(word of wordsInText){
      if(word.match(wordToReplace)){
           count += 1
+          charCount += word.length
      }
     }
     noOfWords = text.split(" ").length
-    noOfCharScanned = text.length
+    noOfCharReplaced = charCount
     const timeTaken = Date.now() - startTime
     container.querySelector(".words").innerText = noOfWords
     container.querySelector(".time").innerText = timeTaken/1000 + "second(s)"
-    container.querySelector(".char").innerText = noOfCharScanned
+    container.querySelector(".char").innerText = noOfCharReplaced
     container.querySelector(".replaced").innerText = count
     // console.log(`Replaced ${count} words: in ${timeTaken/1000} seconds, scanned ${noOfCharScanned} characters and ${noOfWords} words`)
 }
